@@ -1,0 +1,11 @@
+[package]
+name = "khipu"
+version = "0.0.6"
+authors = ["inkhare <iapricot@foxmail.com>"]
+description = "A native gRPC client & server implementation."
+edition = "2018"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["grpc"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
