@@ -1,0 +1,39 @@
+[package]
+name = "lucat"
+version = "0.0.0"
+authors = ["inkhare <iapricot@foxmail.com>"]
+description = "A native gRPC client & server implementation."
+edition = "2018"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["grpc"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.32"
+cynthia = { version = "0.0.6" }
+nephele = { version = "0.0.2" }
+prost = "0.8.0"
+prost-types = "0.8"
+prost-derive = "0.8.0"
+prost-build = "0.8.0"
+async-trait = "0.1.51"
+pin-project-lite = { version = "0.2.0" }
+base64 = "0.13"
+percent-encoding = "2.1"
+tracing = "0.1"
+
+bytes = "1.0"
+failure = "0.1.2"
+failure_derive = "0.1.2"
+http = "0.2.1"
+
+[dependencies.clippy]
+optional = true
+version = "0.0.212"
+
+[features]
+default = []
+dev = ["clippy"]
+

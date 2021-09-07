@@ -1,0 +1,22 @@
+[package]
+name = "lucat-build"
+version = "0.0.0"
+edition = "2018"
+keywords = ["rpc", "grpc", "async", "codegen", "protobuf"]
+
+[dependencies]
+prost-build = { version = "0.8", optional = true }
+syn = "1.0"
+quote = "1.0"
+proc-macro2 = "1.0"
+pin-project-lite = { version = "0.2.0", optional = true }
+
+[features]
+default = ["transport", "rustfmt", "prost"]
+rustfmt = []
+transport = []
+prost = ["prost-build"]
+compression = []
+
+[package.metadata.docs.rs]
+all-features = true

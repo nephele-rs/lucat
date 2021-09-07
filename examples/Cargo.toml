@@ -1,0 +1,48 @@
+[package]
+name = "examples"
+version = "0.0.0"
+publish = false
+edition = "2018"
+
+[dependencies]
+cynthia = { version = "0.0.6" }
+nephele = { version = "0.0.2" }
+lucat = { path = "../lucat" }
+prost = "0.8.0"
+prost-derive = "0.8.0"
+http = "0.2.1"
+bytes = "1.0"
+failure = "0.1.2"
+anyhow = "1.0.32"
+pin-project-lite = { version = "0.2.0" }
+
+[build-dependencies]
+lucat-build = { path = "../lucat-build" }
+
+[[example]]
+name = "new_server"
+path = "new_server.rs"
+
+[[example]]
+name = "new_server_pin"
+path = "new_server_pin.rs"
+
+[[example]]
+name = "server"
+path = "server.rs"
+
+[[example]]
+name = "new_client"
+path = "new_client.rs"
+
+[[example]]
+name = "client"
+path = "client.rs"
+
+[[example]]
+name = "call"
+path = "call.rs"
+
+[[example]]
+name = "pbtest"
+path = "pbtest.rs"
